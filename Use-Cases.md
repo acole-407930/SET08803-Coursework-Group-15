@@ -6,7 +6,7 @@ This document defines a series of structured use cases for the Population Inform
 
 ## Use Case 1: View Global Population
 
-**Goal in Context:** To allow users to view all countries in the world, continent or region, and organised by the largest to smallest population.
+**Goal in Context:** To allow users to view all countries in the world, continent or region, organised by the largest to smallest population.
 
 **Scope:** Population Information System (SQL-based data access and reporting system).
 
