@@ -1,4 +1,4 @@
-## Use Cases for Population Information System
+# Use Cases 
 This document defines a series of structured use cases for the Population Information System, capturing functional interactions between system actors and core processes. Each use case specifies the operational context, execution flow, and expected system behavior to support requirements analysis and solution design.
 
 ---
