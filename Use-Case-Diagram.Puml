@@ -1,0 +1,27 @@
+@startuml
+' Set layout direction
+left to right direction
+
+' Define actor
+actor "Authorized User / Data Analyst" as User
+
+' Define use cases
+rectangle "Population Reports" {
+  (View Global Population)
+  (View Population at Different Geographic Levels)
+  (View Population Distribution in Urban and Rural Areas)
+  (View Population by Language)
+  (Generate Population Report)
+}
+
+' Actor interactions
+User --> (View Global Population)
+User --> (View Population at Different Geographic Levels)
+User --> (View Population Distribution in Urban and Rural Areas)
+User --> (View Population by Language)
+User --> (Generate Population Report)
+
+' Relationships between use cases
+(View Population Distribution in Urban and Rural Areas) ..> (Generate Population Report): «include»
+(View Population at Different Geographic Levels) ..> (View Global Population): «extend»
+@enduml
