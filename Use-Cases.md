@@ -727,7 +727,7 @@
 
 - The system executes the query and organizes results by the selected scope.
 
-- The report is displayed with columns:**
+- The report is displayed with columns:
 
     - Name
 
