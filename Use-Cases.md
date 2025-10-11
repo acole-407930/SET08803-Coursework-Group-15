@@ -225,7 +225,7 @@
 ---
 
 
-## Use Case 5: View All Capital Cities in the World, Continent, or Region Organized by Largest to Smallest Population
+## Use Case 5: View All Capital Cities 
 
 **Goal in Context:** To allow users to generate a ranked list of all capital cities across the world or within a selected continent or region, ordered from the largest to smallest population.
 
