@@ -461,4 +461,282 @@
 
 - The system logs the query execution details for auditing purposes.
 
+---
 
+
+## Use Case 9: View Population by Language
+
+**Goal in Context:** To allow users to generate a report showing the number of people who speak selected languages (Chinese, English, Hindi, Spanish, Arabic) ranked from greatest to smallest, including the percentage of the world population for each language.
+
+**Scope:** Population Information System (SQL-based reporting and analytics system).
+
+**Level:** Primary Task.
+
+**Preconditions:**
+
+- The SQL database contains accurate population data by country and information on primary languages spoken.
+
+- Total world population is available or can be calculated from the database.
+
+- Users have permission to access population and language-related reports.
+
+**Success End Condition:**
+
+- The system displays the number of speakers for each selected language, ordered from largest to smallest, along with the percentage of world population for each language.
+
+**Failed End Condition:**
+
+- Population or language data is missing.
+
+- The database connection fails.
+
+- The system displays an appropriate error message.
+
+**Primary Actor:** Data Analyst or any authorized user who needs population statistics.
+
+**Trigger:** The user selects the “Language Population Report” from the reporting interface.
+
+**Main Success Scenario:**
+
+- The user logs into the Population Information System.
+
+- The user navigates to the Reports section.
+
+- The user selects “Language Population Report.”
+
+- The system retrieves the total world population from the database.
+
+- The system retrieves population counts of speakers for the selected languages: Chinese, English, Hindi, Arabic
+
+- The system calculates the percentage of world population for each language
+
+- The system sorts the results from greatest to smallest number of speakers.
+
+- The report is displayed with columns:Language, Number of Speakers, Percentage of World Population.
+
+- The user may export or print the report (CSV, Excel, PDF).
+
+- The system logs the report generation for auditing purposes.
+
+
+---
+
+
+## Use Case 10: Generate Country Report
+
+**Goal in Context:** To allow users to generate a report listing countries along with their Code, Name, Continent, Region, Population, and Capital.
+
+**Scope:** Population Information System (SQL-based reporting system).
+
+**Level:** Primary Task.
+
+**Preconditions:**
+
+- The SQL database contains accurate and up-to-date data for countries, continents, regions, populations, and capitals.
+
+- Relationships exist between Country, Continent, Region, and City tables.
+
+- The user has permission to access country-level population and administrative data.
+
+**Success End Condition:** The system displays a report with all countries including the columns: Code, name, continent, region, population, capital.
+
+**Failed End Condition:**
+
+- Database connection fails or country data is missing.
+
+- The system displays an error message indicating the report cannot be generated.
+
+**Primary Actor:** Data Analyst or any authorized user who needs population statistics.
+
+**Trigger:** The user selects “Country Report” from the system’s reporting interface.
+
+**Main Success Scenario:**
+
+- The user logs into the Population Information System.
+
+- The user navigates to the Reports section.
+
+- The user selects “Country Report.”
+
+- The system constructs an SQL query to retrieve country details.
+
+- The system executes the query and retrieves the following for each country: Name, continent, region, population, capital.
+
+- The results are displayed in a table or report format.
+
+- The user may export the report to CSV, Excel, or PDF.
+
+- The system logs the query and report generation event for auditing purposes.
+
+
+---
+
+
+## Use Case 11: Generate City Report
+
+**Goal in Context:** To allow users to generate a report listing cities along with their Name, Country, District, and Population.
+
+**Scope:** Population Information System (SQL-based reporting system).
+
+**Level:** Primary Task.
+
+**Preconditions:**
+
+- The SQL database contains accurate and up-to-date data for cities, districts, and countries.
+
+- Relationships exist between City, District, and Country tables.
+
+- The user has permission to access city-level population and administrative data.
+
+**Success End Condition:**
+
+**The system displays a report with all cities including the columns:** Name, Country, District, Population.
+
+**Failed End Condition:**
+
+- Database connection fails or city data is missing.
+
+- The system displays an error message indicating the report cannot be generated.
+
+**Primary Actor:** Data Analyst or any authorized user who needs population statistics.
+
+**Trigger:** The user selects “City Report” from the system’s reporting interface.
+
+**Main Success Scenario:**
+
+- The user logs into the Population Information System.
+
+- The user navigates to the Reports section.
+
+- The user selects “City Report.”
+
+- The system constructs an SQL query to retrieve city details.
+
+- The system executes the query and retrieves the following for each city: Name, Country, District, Population.
+
+- The results are displayed in a table or report format.
+
+- The user may export the report to CSV, Excel, or PDF.
+
+- The system logs the query and report generation event for auditing purposes.
+
+
+---
+
+
+## Use Case 12: Generate Capital City Report
+
+**Goal in Context:** To allow users to generate a report listing capital cities along with their Name, Country, and Population.
+
+**Scope:** Population Information System (SQL-based reporting system).
+
+**Level:** Primary Task.
+
+**Preconditions:**
+
+- The SQL database contains accurate and up-to-date information on cities, countries, and populations.
+
+- Capital cities are correctly flagged or identified in the database.
+
+- The user has permission to access city and country data.
+
+**Success End Condition:**
+
+**The system displays a report containing all capital cities with the columns:** Name, Country, Population.
+
+**Failed End Condition:**
+
+- Database connection fails or capital city data is missing.
+
+- The system displays an error message indicating the report cannot be generated.
+
+**Primary Actor:** Data Analyst or any authorized user who needs population statistics.
+
+**Trigger:** The user selects “Capital City Report” from the system’s reporting interface.
+
+**Main Success Scenario:**
+
+- The user logs into the Population Information System.
+
+-  user navigates to the Reports section.
+
+- The user selects “Capital City Report.”
+
+- The system constructs an SQL query to retrieve capital city details.
+
+- The system executes the query and retrieves the following for each capital city: Name, country, population.
+
+- The results are displayed in a table or report format.
+
+- The user may export the report to CSV, Excel, or PDF.
+
+- The system logs the report generation for auditing purposes.
+
+
+---
+
+
+## Use Case 13: Generate Population Report
+
+**Goal in Context:** To allow users to generate a population report showing the total population, population living in cities (urban population with percentage), and population not living in cities (rural population with percentage) for a continent, region, or country.
+
+**Scope:** Population Information System (SQL-based reporting and analytics system).
+
+**Level:** Primary Task.
+
+**Preconditions:**
+
+- The SQL database contains up-to-date population data for cities, countries, regions, and continents.
+
+- Urban population is calculated as the sum of all city populations; rural population is the difference between total and urban population.
+
+- Relationships exist between City, Country, Region, and Continent tables.
+
+- The user has permission to access population reports.
+
+**Success End Condition:** The system displays a report with columns: Name (continent, region, or country), total population, Population in cities (including percentage), population not in cities (including percentage).
+
+**Failed End Condition:**
+
+- Database connection fails or required population data is missing.
+
+- An appropriate error message is displayed.
+
+**Primary Actor:** Data Analyst or any authorized user who needs population statistics.
+
+**Trigger:** The user selects “Population Report” from the system interface.
+
+**Main Success Scenario:**
+
+- The user logs into the Population Information System.
+
+- The user navigates to the Reports section.
+
+- The user selects “Population Report.”
+
+- The system prompts the user to select a scope: Continent, region, country.
+
+- The user selects the desired scope
+
+- The system constructs an SQL query to retrieve:
+    - Total population of the selected scope
+
+    - Population living in cities (urban population) and percentage of total
+
+    - Population not living in cities (rural population) and percentage of total
+
+- The system executes the query and organizes results by the selected scope.
+
+- The report is displayed with columns:**
+
+    - Name
+
+    - Total Population
+
+    - Population in Cities (% of total)
+
+    - Population Not in Cities (% of total)
+
+- The user may export the report to CSV, Excel, or PDF.
+
+- The system logs the query and report generation for auditing.
