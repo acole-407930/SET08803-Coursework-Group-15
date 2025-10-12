@@ -1,0 +1,17 @@
+@startuml
+left to right direction
+
+actor "Authorized User / Data Analyst" as User
+
+rectangle "Country Population Reports" as Country
+rectangle "City Population Reports" as City
+rectangle "Capital Population Reports" as Capital
+rectangle "Urban & Rural Population Distribution" as UrbanRural
+rectangle "Language Population Reports" as Language
+
+User --> Country
+User --> City
+User --> Capital
+User --> UrbanRural
+User --> Language
+@enduml
