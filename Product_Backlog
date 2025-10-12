@@ -1,0 +1,8 @@
+# 🧾 Product Backlog
+
+| ID | User Story | Priority | Story Points | Status | Acceptance Criteria |
+|----|-------------|-----------|----------|-----------|-----------|
+| 1 | As developer, I want to set up GitHub repository and branching structure for project. | High | 2 | Done | - GitHub repo created under organization account
+- Main and develop branches created
+- Branch protection rules configured
+- README.md initialized|
