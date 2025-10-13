@@ -23,7 +23,7 @@ The project deliverables are as follows:
 
 1. Code of Conduct  
 2. Product Backlog  
-3. Kanban Board  
+3. Kanban Board  - https://zube.io/napier-513/devops-coursework-group-15/w/workspace-1/kanban
 4. Use Cases / Diagram  
 5. Sprint Board  
 
