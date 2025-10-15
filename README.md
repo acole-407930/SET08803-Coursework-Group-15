@@ -2,7 +2,7 @@
 
 ## Overview & Purpose
 The purpose of this project is to collaborate as a Scrum Team to complete the DevOps coursework.  
-The task is to design and implement a system that allows for reporting on various specified criteria — country, city, capitals, and population information — using the provided `world.sql` database.  
+The task is to design and implement a system that allows for reporting on various specified criteria country, city, capitals, and population information, using the provided `world.sql` database.  
 Scrum methodology will be used to guide collaboration and teamwork, along with integration, version control, and project tracking tools.
 
 ---
