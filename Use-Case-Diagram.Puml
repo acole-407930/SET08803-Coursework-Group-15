@@ -3,11 +3,11 @@ left to right direction
 
 actor "Authorized User / Data Analyst" as User
 
-rectangle "Country Population Reports" as Country
-rectangle "City Population Reports" as City
-rectangle "Capital Population Reports" as Capital
-rectangle "Urban & Rural Population Distribution" as UrbanRural
-rectangle "Language Population Reports" as Language
+usecase "Country Population Reports" as Country
+usecase "City Population Reports" as City
+usecase "Capital Population Reports" as Capital
+usecase "Urban & Rural Population Distribution" as UrbanRural
+usecase "Language Population Reports" as Language
 
 User --> Country
 User --> City
